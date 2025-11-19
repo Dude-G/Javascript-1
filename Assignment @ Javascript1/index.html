@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="personName"></p>
+    <p id="personAge"></p>
+    <p id="personHobby"></p>
+
+    <p id="message">Not clicked yet</p>
+    <button id="btn">Click me</button>
+
+
+    <script>
+        let Studentname = "Stanlee";
+        let age = 17;
+        let hobby = "Typeshi";
+
+        document.getElementById("personName").textContent = Studentname;
+        document.getElementById("personAge").textContent = age;
+        document.getElementById("personHobby").textContent = hobby;
+
+        let greeting = "Hello";
+        let name = "Student";
+        console.log( greeting + name )
+
+      let button = document.getElementById("btn");
+      button.addEventListener("click", function(){
+        document.getElementById("message").textContent = "Button Clicked";
+      });
+
+
+    </script>
+</body>
+</html>
